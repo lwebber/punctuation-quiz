@@ -106,6 +106,7 @@ function handleQuiz() {
             $('.result').show();
             $('.answer').show();
             $('.feedback').show();
+            $('.score').show();
             $('.disp-qNum').show();
             $('.end-screen').show();
             $('form').show();
