@@ -22,7 +22,25 @@ h1 {
     margin-right: auto;
     margin-left: auto;
     border: 1px solid gray;
-    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px gray;
+    min-height: 480px;
+}
+
+form {
+    border: 1px solid gray
+}
+
+.disp-qNum,
+.result,
+.score,
+.feedback,
+.answer {
+    border: 1px solid gray;
+}
+
+p {
+    display: block
 }
 
 .btn-wrap {
