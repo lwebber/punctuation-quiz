@@ -116,6 +116,17 @@ form,
     max-width: 70%;
 }
 
+.restart {
+    position: absolute;
+    bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    max-width: 70%;
+}
+
 .end-screen {
     position: absolute;
     top: 300px;
@@ -192,10 +203,13 @@ p {
     form,
     .questions,
     .result {
-        max-width: 90%;
+        max-width: 95%;
     }
     .title {
         font-size: 1em;
         margin-top: 10px;
+    }
+    .result {
+        margin-top: 5px;
     }
 }
