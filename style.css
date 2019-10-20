@@ -33,7 +33,6 @@ h1 {
 
 form,
 .questions {
-    border: 1px solid gray;
     max-width: 70%;
     margin-right: auto;
     margin-left: auto;
@@ -43,7 +42,6 @@ form,
 .score,
 .disp-qNum,
 .feedback {
-    border: 1px solid gray;
     max-width: 50%;
     text-align: center;
     padding: 0px;
@@ -135,12 +133,6 @@ button:hover {
     font-size: 1.5em;
 }
 
-.result,
-.feedback,
-.answer {
-    border: 1px solid gray;
-}
-
 p {
     display: block
 }
@@ -212,6 +204,6 @@ p {
     form,
     .questions,
     .result {
-        max-width: 85%;
+        max-width: 90%;
     }
 }
