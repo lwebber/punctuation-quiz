@@ -85,6 +85,7 @@ function handleQuiz() {
     }
 
     function startQuiz() {
+        $('.restart').hide();
         $('.questions').hide();
         $('.result').hide();
         $('.answer').hide();
@@ -125,15 +126,9 @@ function handleQuiz() {
         $('.feedback').hide();
         $('.disp-qNum').hide();
         $('form').hide();
+        $('#go-btn').hide();
         $('.end-screen').text("End");
-        reloadQuiz();
-    }
-
-    //does this need event delegation?
-    function reloadQuiz() {
-        $('button[name="continue"]').on('click', function(event) {
-            location.reload(true);
-        });
+        $('.restart').show();
     }
 }
 

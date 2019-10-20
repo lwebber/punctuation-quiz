@@ -4,12 +4,6 @@ body {
     font-size: 20px;
 }
 
-button {
-    font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-    box-shadow: 1px 1px gray;
-}
-
 h1 {
     color: lightblue;
     text-align: center;
@@ -17,6 +11,21 @@ h1 {
     -webkit-text-stroke: 1px black;
     font-size: 3em;
     margin-bottom: 9px;
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 1px 1px gray;
+}
+
+.btn-wrap {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: lightgray;
 }
 
 .card {
@@ -47,7 +56,8 @@ form,
     padding: 0px;
 }
 
-.score {
+.score,
+.restart {
     position: absolute;
     bottom: 15px;
     margin-left: auto;
@@ -82,10 +92,6 @@ form,
     left: 0;
     right: 0;
     max-width: 70%;
-}
-
-button:hover {
-    background-color: lightgray;
 }
 
 .answer {
@@ -137,21 +143,8 @@ p {
     display: block
 }
 
-.btn-wrap {
-    text-align: center;
-    margin-top: 10px;
-}
-
 
 /* media queries */
-
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {}
 
 
 /* 
@@ -172,23 +165,13 @@ p {
 
 /* 
     ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 
 /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
-@media (min-width: 481px) and (max-width: 767px) {}
-
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
+    most phones
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
