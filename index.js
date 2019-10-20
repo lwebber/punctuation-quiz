@@ -47,11 +47,11 @@ function handleQuiz() {
             $('.answer').show();
             if (choice === questions[qNum].correct) {
                 $('.feedback').show();
-                $('.feedback').text("Correct!").addClass('correct');
+                $('.feedback').text("Correct!").removeClass('incorrect').addClass('correct');
                 score += 1;
             } else {
                 $('.feedback').show();
-                $('.feedback').text("Incorrect!").addClass('incorrect');
+                $('.feedback').text("Incorrect!").removeClass('correct').addClass('incorrect');
             }
             $('.score').text(`Score: ${score}`);
         });
