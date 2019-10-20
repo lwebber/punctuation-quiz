@@ -125,7 +125,7 @@ function handleQuiz() {
         $('.feedback').hide();
         $('.disp-qNum').hide();
         $('form').hide();
-        $('.end-screen').text("Quiz Over!");
+        $('.end-screen').text("End");
         reloadQuiz();
     }
 
