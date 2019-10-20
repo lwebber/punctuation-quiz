@@ -6,13 +6,14 @@ body {
 
 button {
     font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 1px 1px gray;
 }
 
 h1 {
-    color: white;
+    color: lightblue;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
-    color: white;
     -webkit-text-stroke: 1px black;
     font-size: 3em;
     margin-bottom: 9px;
@@ -25,15 +26,94 @@ h1 {
     border-radius: 20px;
     box-shadow: 2px 2px gray;
     min-height: 480px;
+    max-width: 70%;
+    background-color: white;
+    position: relative;
 }
 
-form {
-    border: 1px solid gray
+form,
+.questions {
+    border: 1px solid gray;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
 }
 
-.disp-qNum,
-.result,
 .score,
+.disp-qNum,
+.feedback {
+    border: 1px solid gray;
+    max-width: 50%;
+    text-align: center;
+    padding: 0px;
+}
+
+.score {
+    position: absolute;
+    bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.disp-qNum {
+    position: absolute;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.feedback {
+    position: absolute;
+    bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.result {
+    position: absolute;
+    bottom: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 70%;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.answer {
+    position: absolute;
+    bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    max-width: 70%;
+}
+
+.incorrect {
+    color: red;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.correct {
+    color: green;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.result,
 .feedback,
 .answer {
     border: 1px solid gray;
@@ -45,6 +125,7 @@ p {
 
 .btn-wrap {
     text-align: center;
+    margin-top: 10px;
 }
 
 
