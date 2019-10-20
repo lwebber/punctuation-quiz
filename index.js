@@ -86,6 +86,7 @@ function handleQuiz() {
 
     function startQuiz() {
         $('.restart').hide();
+        $('.title').hide();
         $('.questions').hide();
         $('.result').hide();
         $('.answer').hide();
@@ -112,6 +113,7 @@ function handleQuiz() {
             $('.end-screen').show();
             $('form').show();
             $('#go-btn').show();
+            $('.title').show()
         });
     }
 
