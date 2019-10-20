@@ -3,33 +3,6 @@ function handleQuiz() {
     let qNum = 0;
     let score = 0;
 
-    const questions = [{
-            sent: "They hate their teacher.",
-            correct: "their",
-            options: ["their", "there", "they're", "theyre"]
-        },
-        {
-            sent: "It's fun.",
-            correct: "It's",
-            options: ["It's", "Its", "Itzz", "Itz"]
-        },
-        {
-            sent: "Theirs a bear over there.",
-            correct: "There's",
-            options: ["Theirs", "They'res", "There's", "Theres"]
-        },
-        {
-            sent: "It's fur is black.",
-            correct: "Its",
-            options: ["Itz", "Its", "Itzz", "It's"]
-        },
-        {
-            sent: "It's fun.",
-            correct: "It's",
-            options: ["It's", "Its", "Itzz", "Itz"]
-        },
-    ];
-
     startQuiz();
     displayQuestionNum();
     handleSubmit();
@@ -45,16 +18,20 @@ function handleQuiz() {
             $('.result').show();
             $('.answer').text(`The correct answer is: ${questions[qNum].correct}`);
             $('.answer').show();
-            if (choice === questions[qNum].correct) {
-                $('.feedback').show();
-                $('.feedback').text("Correct!").removeClass('incorrect').addClass('correct');
-                score += 1;
-            } else {
-                $('.feedback').show();
-                $('.feedback').text("Incorrect!").removeClass('correct').addClass('incorrect');
-            }
-            $('.score').text(`Score: ${score}`);
+            evaluateChoice(choice);
         });
+    }
+
+    function evaluateChoice(choice) {
+        if (choice === questions[qNum].correct) {
+            $('.feedback').show();
+            $('.feedback').text("Correct!").removeClass('incorrect').addClass('correct');
+            score += 1;
+        } else {
+            $('.feedback').show();
+            $('.feedback').text("Incorrect!").removeClass('correct').addClass('incorrect');
+        }
+        $('.score').text(`Score: ${score}`);
     }
 
     function handleContinue() {
