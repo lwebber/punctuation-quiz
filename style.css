@@ -103,7 +103,7 @@ button:hover {
 
 .end-screen {
     position: absolute;
-    top: 150px;
+    top: 300px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -114,6 +114,12 @@ button:hover {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     -webkit-text-stroke: 1px black;
+    font-size: 3em;
+}
+
+.feedback {
+    font-family: 'Libre Baskerville', serif;
+    -webkit-text-stroke: 1px darkgray;
     font-size: 3em;
 }
 
@@ -195,14 +201,17 @@ p {
 
 @media (min-width: 320px) and (max-width: 480px) {
     .card {
-        max-width: 90%;
+        max-width: 95%;
     }
     h1 {
         font-size: 2em;
     }
     .disp-qNum,
     .score,
-    .answer {
-        max-width: 80%;
+    .answer,
+    form,
+    .questions,
+    .result {
+        max-width: 85%;
     }
 }
