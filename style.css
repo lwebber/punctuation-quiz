@@ -20,7 +20,11 @@ h1 {
     -webkit-text-stroke: 1px black;
     font-size: 1.5em;
     position: absolute;
-    left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 button {
@@ -56,7 +60,8 @@ form,
     max-width: 70%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    border: 1px solid gray;
 }
 
 .score,
@@ -187,7 +192,12 @@ p {
         font-size: 3em;
         margin-top: 5px;
     }
+    .questions {
+        max-width: 50%;
+    }
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {}
 
 @media (min-width: 320px) and (max-width: 480px) {
     .card {
