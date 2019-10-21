@@ -61,7 +61,6 @@ form,
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
-    border: 1px solid gray;
 }
 
 .score,
@@ -197,7 +196,13 @@ p {
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .card,
+    .questions,
+    form {
+        max-width: 90%;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
     .card {
