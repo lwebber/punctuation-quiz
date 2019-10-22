@@ -45,9 +45,7 @@ function handleQuiz() {
         $('.disp-qNum').text(`Question ${qNum + 1} of ${questions.length}`);
     }
 
-
     function constructQuestion() {
-        //build html question
         let str = `${questions[qNum].sent}<br>`;
         for (let i = 0; i < 4; i++) {
             str += `<input type="radio" name="test" value=${questions[qNum].options[i]} required>${questions[qNum].options[i]}</input><br>`;
@@ -110,6 +108,5 @@ function handleQuiz() {
         $('.restart').show();
     }
 }
-
 
 $(handleQuiz);
