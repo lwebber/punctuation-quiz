@@ -48,7 +48,7 @@ function handleQuiz() {
     function constructQuestion() {
         let str = `${questions[qNum].sent}<br>`;
         for (let i = 0; i < 4; i++) {
-            str += `<input type="radio" name="test" value=${questions[qNum].options[i]} required>${questions[qNum].options[i]}</input><br>`;
+            str += `<input type="radio" name="test" id="q-${i}" value=${questions[qNum].options[i]} required><label for="q-${i}">${questions[qNum].options[i]}</label><br>`;
         }
         return str;
     }
