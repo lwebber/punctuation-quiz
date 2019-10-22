@@ -8,6 +8,52 @@ function handleQuiz() {
     handleSubmit();
     handleContinue();
 
+    function startQuiz() {
+        $('.restart').hide();
+        $('.title').hide();
+        $('.questions').hide();
+        $('.result').hide();
+        $('.answer').hide();
+        $('.feedback').hide();
+        $('.disp-qNum').hide();
+        $('.end-screen').hide();
+        $('form').hide();
+        $('#go-btn').hide();
+        $('.start-screen').show();
+        handleStart();
+    }
+
+    function handleStart() {
+        let txt = constructQuestion();
+        $('.questions').html(txt);
+        $('#start').on('click', function() {
+            $('.start-screen').hide();
+            $('.questions').show();
+            $('.result').show();
+            $('.answer').show();
+            $('.feedback').show();
+            $('.score').show();
+            $('.disp-qNum').show();
+            $('.end-screen').show();
+            $('form').show();
+            $('#go-btn').show();
+            $('.title').show()
+        });
+    }
+
+    function displayQuestionNum() {
+        $('.disp-qNum').text(`Question ${qNum + 1} of ${questions.length}`);
+    }
+
+
+    function constructQuestion() {
+        //build html question
+        let str = `${questions[qNum].sent}<br>`;
+        for (let i = 0; i < 4; i++) {
+            str += `<input type="radio" name="test" value=${questions[qNum].options[i]} required>${questions[qNum].options[i]}</input><br>`;
+        }
+        return str;
+    }
 
     function handleSubmit() {
         $('button[name="test"]').on('click', function(event) {
@@ -50,52 +96,6 @@ function handleQuiz() {
             $('.answer').hide();
             $('.feedback').hide();
         });
-    }
-
-    function constructQuestion() {
-        //build html question
-        let str = `${questions[qNum].sent}<br>`;
-        for (let i = 0; i < 4; i++) {
-            str += `<input type="radio" name="test" value=${questions[qNum].options[i]} required>${questions[qNum].options[i]}</input><br>`;
-        }
-        return str;
-    }
-
-    function startQuiz() {
-        $('.restart').hide();
-        $('.title').hide();
-        $('.questions').hide();
-        $('.result').hide();
-        $('.answer').hide();
-        $('.feedback').hide();
-        $('.disp-qNum').hide();
-        $('.end-screen').hide();
-        $('form').hide();
-        $('#go-btn').hide();
-        $('.start-screen').show();
-        handleStart();
-    }
-
-    function handleStart() {
-        let txt = constructQuestion();
-        $('.questions').html(txt);
-        $('#start').on('click', function() {
-            $('.start-screen').hide();
-            $('.questions').show();
-            $('.result').show();
-            $('.answer').show();
-            $('.feedback').show();
-            $('.score').show();
-            $('.disp-qNum').show();
-            $('.end-screen').show();
-            $('form').show();
-            $('#go-btn').show();
-            $('.title').show()
-        });
-    }
-
-    function displayQuestionNum() {
-        $('.disp-qNum').text(`Question ${qNum + 1} of ${questions.length}`);
     }
 
     function endQuiz() {
