@@ -202,6 +202,10 @@ p {
     form {
         max-width: 90%;
     }
+    .questions {
+        margin-left: 200px;
+        margin-top: 80px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -226,5 +230,8 @@ p {
     }
     .result {
         margin-top: 5px;
+    }
+    .questions {
+        margin-left: 45px;
     }
 }
