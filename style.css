@@ -6,7 +6,7 @@ html {
 }
 
 h1 {
-    color: lightblue;
+    color: #ffd822;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     -webkit-text-stroke: 1px black;
@@ -15,7 +15,7 @@ h1 {
 }
 
 .title {
-    color: lightblue;
+    color: #ffd822;
     font-family: 'Libre Baskerville', serif;
     -webkit-text-stroke: 1px black;
     font-size: 1.5em;
@@ -29,7 +29,7 @@ h1 {
 
 button {
     font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     box-shadow: 1px 1px gray;
 }
 
@@ -101,7 +101,7 @@ form,
 
 .result {
     position: absolute;
-    bottom: 170px;
+    bottom: 150px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -111,7 +111,7 @@ form,
 
 .answer {
     position: absolute;
-    bottom: 150px;
+    bottom: 130px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -140,7 +140,7 @@ form,
     right: 0;
     font-weight: 700;
     max-width: 70%;
-    color: lightblue;
+    color: #ffd822;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     -webkit-text-stroke: 1px black;
@@ -189,10 +189,11 @@ p {
     }
     .title {
         font-size: 3em;
-        margin-top: 5px;
+        margin-top: 25px;
     }
     .questions {
         max-width: 50%;
+        margin-top: 110px;
     }
 }
 
