@@ -18,12 +18,8 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     -webkit-text-stroke: 1px black;
     font-size: 1.5em;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    left: 0;
-    right: 0;
+    top: 0px;
 }
 
 button {
@@ -44,7 +40,7 @@ button:hover {
 .card {
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 60px;
     border: 1px solid gray;
     border-radius: 20px;
     box-shadow: 2px 2px gray;
@@ -54,12 +50,9 @@ button:hover {
     position: relative;
 }
 
-form,
-.questions {
+form {
     max-width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
+    top: 10px;
 }
 
 .score,
@@ -71,9 +64,14 @@ form,
 }
 
 .score,
-.restart {
+.restart,
+.disp-qNum,
+.feedback,
+.result,
+.answer,
+.restart,
+.end-screen {
     position: absolute;
-    bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -81,62 +79,32 @@ form,
 }
 
 .disp-qNum {
-    position: absolute;
-    bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    bottom: 10px;
 }
 
 .feedback {
-    position: absolute;
     bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
 }
 
 .result {
-    position: absolute;
     bottom: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     max-width: 70%;
 }
 
 .answer {
-    position: absolute;
     bottom: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     font-size: 16px;
     max-width: 70%;
 }
 
 .restart {
-    position: absolute;
     bottom: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     font-size: 16px;
     max-width: 70%;
 }
 
 .end-screen {
-    position: absolute;
     top: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     font-weight: 700;
     max-width: 70%;
     color: #9a1561;
@@ -172,6 +140,12 @@ p {
 .answer {
     text-align: center;
 }
+
+
+/* footer {
+    font-size: .75em;
+    margin-top: .25em;
+} */
 
 
 /* media queries */

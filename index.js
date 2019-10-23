@@ -104,7 +104,7 @@ function handleQuiz() {
         $('.disp-qNum').hide();
         $('form').hide();
         $('#go-btn').hide();
-        $('.end-screen').text("End");
+        $('.end-screen').text(`Final Score: ${score} out of ${questions.length}`);
         $('.restart').show();
     }
 }
