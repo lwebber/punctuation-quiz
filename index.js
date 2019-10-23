@@ -54,7 +54,7 @@ function handleQuiz() {
     }
 
     function handleSubmit() {
-        $('button[name="test"]').on('click', function(event) {
+        $('#the-form').on('submit', function(event) {
             event.preventDefault();
             displayQuestionNum();
             let choice = $('input[name="test"]:checked').val();
