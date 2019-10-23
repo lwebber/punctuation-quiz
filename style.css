@@ -30,6 +30,7 @@ button {
     font-size: 20px;
     font-family: 'Libre Baskerville', serif;
     box-shadow: 1px 1px gray;
+    margin-top: 10px;
 }
 
 .btn-wrap {
@@ -202,6 +203,10 @@ p {
     form {
         max-width: 90%;
     }
+    .questions {
+        margin-left: 300px;
+        margin-top: 80px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -226,5 +231,8 @@ p {
     }
     .result {
         margin-top: 5px;
+    }
+    .questions {
+        margin-left: 60px;
     }
 }
